@@ -1,0 +1,87 @@
+.tables {
+  display: flex;
+  flex-direction: column;
+  min-width: 45%;
+  align-self: flex-end;
+}
+
+.tables table {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.tables table:first-child {
+  margin-bottom: 2rem;
+}
+
+.tables table thead {
+  background-color: var(--sec-color);
+}
+
+.tables table thead tr th,
+.tables table tbody tr td {
+  padding: 10px;
+  font-family: var(--text-font);
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.tables table thead tr th {
+  font-weight: 600;
+}
+
+.tables table.ref thead tr th:first-child,
+.tables table.promo thead tr th:first-child {
+  border-top-left-radius: 5px;
+}
+
+.tables table.ref thead tr th:nth-child(n + 4),
+.tables table.promo thead tr th:nth-child(n + 3) {
+  border-top-right-radius: 5px;
+}
+
+.tables table.ref tbody tr td:last-child {
+  color: red;
+  font-weight: 500;
+}
+
+.tables table.promo tbody tr {
+  color: green;
+  font-weight: 500;
+}
+
+.tables .discounts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 10px;
+}
+
+.tables span {
+  margin: 0 auto;
+  font-family: var(--text-font);
+  color: green;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 460px) {
+  .tables {
+    min-width: 100%;
+    margin: 20px auto 0 auto;
+  }
+
+  .tables table:first-child {
+    margin-bottom: 1rem;
+  }
+
+  .tables table thead tr th,
+  .tables table tbody tr td {
+    font-size: 1rem;
+  }
+
+  .tables span {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap");
+@import url("./reset.css");
+@import url("./landing.css");
+@import url("./tables.css");
+
+:root {
+  --main-font: "Comfortaa", cursive;
+  --text-font: "Rajdhani", sans-serif;
+  --main-color: #4fa2de;
+  --sec-color: #ffe101;
+  --green: #adff00;
+  --mobile: 460px;
+  --tablet: 720px;
+  --desktop: 1024px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-color);
+  background-image: url("../img/pattern.svg");
+}
+
+.container {
+  max-width: 75vw;
+  display: flex;
+  gap: 5%;
+  margin: 10vh auto;
+  align-items: center;
+}
+
+/* Mobile */
+@media screen and (max-width: 460px) {
+  .container {
+    flex-direction: column;
+    min-width: 100vw;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    justify-content: space-evenly;
+  }
+}
