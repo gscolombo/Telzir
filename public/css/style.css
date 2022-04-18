@@ -21,6 +21,7 @@
 body {
   background-color: var(--main-color);
   background-image: url("../img/pattern.svg");
+  overflow: hidden;
 }
 
 .container {

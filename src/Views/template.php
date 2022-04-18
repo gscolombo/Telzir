@@ -20,7 +20,7 @@
           <p>Faça uma simulação!</p>
           <div class="labels">
             <label for="origin">DDD de origem:
-              <select required name="origin" id="origin" placeholder="Selecione um DDD">
+              <select required name="origin" id="origin">
                 <option value="" disabled selected>Selecione um DDD</option>
                 <?php
                     $codes = $database -> get_codes(); 
