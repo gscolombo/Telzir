@@ -1,5 +1,5 @@
 <?php
-    require "./src/Models/Simulation.php";
+    use Telzir\Models\Simulation;
 
     $tax = $database -> get_tax($_POST["origin"], $_POST["destiny"]);
     if ($tax) {

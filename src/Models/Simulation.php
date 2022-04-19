@@ -1,4 +1,6 @@
 <?php     
+    namespace Telzir\Models;
+
     class Simulation {
         private string $ddd_origin, $ddd_destiny, $base_price;
         private int $time;

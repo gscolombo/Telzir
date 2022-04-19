@@ -1,7 +1,10 @@
 <?php 
+    namespace Telzir\Models;
+    use PDO;
+
     class Database {
-        private PDO $connection;
-        public function __construct(PDO $connection) {
+        private \PDO $connection;
+        public function __construct($connection) {
             $this -> connection = $connection;
         }
 

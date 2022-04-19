@@ -1,5 +1,5 @@
 <?php
-    require "./src/Models/Database.php";
+    use Telzir\Models\Database;
     
     try {
         $pdo = new PDO(DB_DSN, DB_USER, DB_PASSWORD);
