@@ -8,7 +8,7 @@
         public function  __construct($ddd_origin, $ddd_destiny, $time, $tax) {
             $this -> ddd_origin = $ddd_origin;
             $this -> ddd_destiny = $ddd_destiny;
-            $this -> time = $time;
+            $this -> time = strip_tags($time);
             $this -> base_price = $tax * $this -> time;
         }
 

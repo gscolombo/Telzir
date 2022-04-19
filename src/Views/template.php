@@ -43,7 +43,7 @@
             </label>
             <label for="time"
               >Tempo de ligação:
-              <input required name="time" id="time" type="text" placeholder="Minutos de ligação"/>
+              <input required maxlength="3" pattern="\d{1,3}" name="time" id="time" type="text" placeholder="000"/>
             </label>
           </div>
           <button>Simular valores</button>
